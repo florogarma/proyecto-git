@@ -17,17 +17,19 @@ img {
 
 /*=====BARRA DE NAVEGACIÒN====*/
 
-nav ul {
+/*nav ul {
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
 }
+
 
 @media (max-width: 768px){
     nav {
         display: none;
     }
 }
+*/
 
 
 /*====HEADER====*/
@@ -35,7 +37,7 @@ nav ul {
 header {
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    background-color: #79dfc1;
     border: 1px solid black;
 }
 
@@ -46,12 +48,11 @@ header {
 .titulo-secundario {
     background-color: white;
     font-size: 12px;
-    border: 1px solid black;
 }
 
 @media (min-width: 1200px) {
     .titulo-secundario {
-        background-color: aquamarine;
+        background-color: #79dfc1;
         border-top: none;
         text-align: center;
     }
@@ -79,7 +80,7 @@ main section {
 
 /* ====SECCIONES====*/
 
-.carrousel {
+/*.carrousel {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
@@ -91,6 +92,7 @@ main section {
     background-size: cover;
     background-position: center;
 }
+*/
 
 
 .container {
@@ -99,8 +101,9 @@ main section {
     align-items: stretch;
     padding: 1px;
     width: 100%;
-    height: 80vh;   
+    height: 100%;   
 }
+
 
 .img-principal {
     background-image: url(../img/vegetables-1584999_1280.jpg);
@@ -129,7 +132,7 @@ main section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 25%;
 }
 
 .img-sec3 {
@@ -139,7 +142,7 @@ main section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 25%;
     background-repeat: no-repeat;
 }
 
@@ -155,7 +158,7 @@ main section {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: 100%;
-        height: 80vh;
+        height: 100%;
     }
 }
 
