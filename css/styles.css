@@ -15,22 +15,9 @@ img {
 }
 
 
-/*=====BARRA DE NAVEGACIÒN====*/
-
-/*nav ul {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid black;
+body {
+    background-color: #79dfc1;
 }
-
-
-@media (max-width: 768px){
-    nav {
-        display: none;
-    }
-}
-*/
-
 
 /*====HEADER====*/
 
@@ -80,19 +67,27 @@ main section {
 
 /* ====SECCIONES====*/
 
-/*.carrousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: mandatory;
+
+.carrousel {
+    padding: 0.5rem;
 }
 
-.style {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    background-size: cover;
-    background-position: center;
+.novedades {
+    text-align: center;
+    font-size: 1-5rem;
+    background-color: #79dfc1;
 }
-*/
+
+
+/*===SECCIONES===*/
+
+
+.subtitulo {
+    text-align: center;
+    padding: 1rem;
+    background-color: #79dfc1;
+}
+
 
 .link {
     display: flex;
@@ -114,7 +109,7 @@ main section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     padding: 20px;
 }
 
@@ -125,7 +120,7 @@ main section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
 }
 
 .link__sec2 {
@@ -135,7 +130,7 @@ main section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
 }
 
 .link__sec3 {
@@ -145,7 +140,7 @@ main section {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     background-repeat: no-repeat;
 }
 
@@ -181,26 +176,13 @@ main section {
 
 }
 
-/*.carrousel {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: mandatory;
-}
-
-.style {
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    background-size: cover;
-    background-position: center;
-}
-*/
 
 
 @media (min-width: 1200px) {
     .link   {
         display: grid;
-        grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50vw 50vw;
 
     }
 
@@ -224,12 +206,87 @@ main section h2 {
     text-align: right;
 }
 
+/*===DISPONIBLES===*/
+
+
+.productos {
+    display: flex;
+    justify-content: center;
+}
+
+.tarjeta {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 9rem;
+    margin: 1rem;
+}
+
+
+.tarjeta img {
+    width: 100%;
+    height: 5rem;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+
+.tarjeta__item {
+    text-align: center;
+    padding: 0.2rem;
+}
+
+
+.tarjeta__precio {
+    text-align: center;
+    padding: 0.2rem;
+}
+
+
+.tarjeta__btn {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 0.4px;
+    cursor: pointer;
+}
+
+
+.tarjeta__btn:hover {
+    background-color: #45a049
+}
+
+
+@media (min-width: 768px){
+    .productos {
+        display: flex;
+        }
+
+    
+    .tarjeta {
+        flex: 1;
+    }
+
+    .tarjeta img {
+        width: 100%;
+        height: 10rem;
+        border-radius: 5px;
+        object-fit: cover;
+    }
+    
+}
+
+
 
 /*====FOOTER====*/
 
 
 footer {
-    background-color: #79dfc1;
+    background-color: aquamarine;
     text-align: center;
     height: 10vh;
     margin: 0;
