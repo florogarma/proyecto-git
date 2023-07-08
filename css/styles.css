@@ -20,14 +20,6 @@ body {
 }
 
 
-h1 {
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-}
-
 
 /*====HEADER====*/
 
@@ -42,9 +34,15 @@ header {
     text-align: center;
 }
 
+
+.titulo__principal {
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+}
+
 .titulo__secundario {
-    background-color: 79dfc1;
-    font-size: 12px;
+    font-family: "Assistant", sans-serif;
+    font-size: 1.5rem;
 }
 
 @media (min-width: 1200px) {
@@ -63,6 +61,12 @@ header {
 
 main section {
     display: flex;
+}
+
+
+.bajada {
+    font-family: "slabo", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
 }
 
 @media (max-width: 768px){
@@ -99,8 +103,10 @@ main section {
 
 .novedades {
     text-align: center;
-    font-size: 1-5rem;
-    background-color: #79dfc1;
+    font-family: "Assistant", sans-serif;
+    font-size: 30px; 
+    font-size: 1,5rem;
+    
 }
 
 
@@ -111,7 +117,8 @@ main section {
 .subtitulo {
     text-align: center;
     padding: 1rem;
-    background-color: #79dfc1;
+    font-family: "Assistant", sans-serif;
+    font-size: 1.5rem;
 }
 
 
@@ -208,7 +215,7 @@ main section {
     .link   {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 50vw 50vw;
+        grid-template-rows: 25vw 25vw;
 
     }
 
@@ -223,6 +230,19 @@ main section {
     }
 }
 
+/*===POR QUE CONSUMIR ORGANICO===*/
+
+
+.cierre {
+    font-family: "slabo", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+
+.receta {
+    font-family: "slabo", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
 
 /*====MAIN====*/
 
@@ -342,4 +362,8 @@ footer {
 h3 {
     margin: 0;
     padding: 0;
+}
+
+a:visited {
+    color: rgb(199, 31, 31);
 }
