@@ -1,0 +1,379 @@
+$bkg-color: cadetblue;
+$bkg-colorsec: #79dfc1;
+$hvr_color: #45a049;
+$btn_color: #4CAF50;
+$ff-principal: "Roboto", sans-serif, arial;
+$ff-sec: "Assistant", sans-serif, arial;
+$ff-ter: "slabo", Arial, Helvetica, sans-serif;
+$MQ-tablet: 768px;
+$MQ-desktop: 1200px;
+
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+body {
+    background-color: $bkg-color;
+}
+
+main section p {
+    padding: 1rem;
+}
+
+
+main section h2 {
+    padding: 1rem;
+    text-align: right;
+}
+
+/*====HEADER====*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: $bkg-colorsec;
+    border: 1px solid black;
+
+        .titulo {
+            text-align: center;
+    
+
+        .titulo__principal {
+            font-family: $ff-principal;
+            font-size: 3rem;
+    
+    
+
+        .titulo__secundario {
+            font-family: $ff-sec;
+            font-size: 1.5rem;
+        }
+    }
+    }
+    @media (min-width: $MQ-desktop) {
+        .tiulo__principal {
+            text-align: center;
+    
+
+        .titulo__secundario {
+            background-color: $bkg-colorsec;
+            border-top: none;
+            text-align: center;
+    }
+    }
+}
+}
+
+/*====MAIN====*/
+
+main {
+    section {
+        display: flex;
+        
+        .bajada {
+            font-family: $ff-ter;
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: $MQ-tablet){
+        .bajada {
+            display: none;
+        }
+        .bajada__secundaria {
+            display: none;
+        }
+        
+    }
+}
+
+
+/* ====CARROUSEL====*/
+
+.novedades {
+    text-align: center;
+    font-family: "Assistant", sans-serif;
+    font-size: 30px; 
+    font-size: 1,5rem;
+    
+}
+
+
+.carrousel {
+    padding: 0.5rem;
+
+        @media (min-width: $MQ-desktop){
+            .carousel-item {
+                height: 600px;
+            }
+    
+            .carousel-item img {
+                width: 100%;
+                height: 100%;
+                justify-content: center;
+        
+            }
+        }
+    
+}
+
+
+
+/*===SECCIONES===*/
+
+
+.subtitulo {
+    text-align: center;
+    padding: 1rem;
+    font-family: "Assistant", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+
+    .link__principal {
+        background-image: url(../img/vegetables-1584999_1280.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        padding: 20px;
+    }
+
+    .link__sec1 {
+        background-image: url(../img/spinach-3708115_1280.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .link__sec2 {
+        background-image: url(../img/web-3120321_1280.png);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+    
+    .link__sec3 {
+        background-image: url(../img/engin-akyurt-Y5n8mCpvlZU-unsplash.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        background-repeat: no-repeat;
+    }
+
+    .texto {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: 768px){
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 100%;
+            height: 100%;
+        
+    
+    
+    
+    .link__principal {
+        grid-column: span 3;
+        grid-row: span 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .link__sec1, .link__sec2, .link__sec3 {
+        width: 100%;
+        height: 20vh;
+    }
+    
+    }
+
+    @media (min-width: 1200px) {
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 25vw 25vw;
+    
+        
+    
+        .link__principal {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        
+        .link__sec1, .link__sec2, .link__sec3 {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    }
+
+
+
+
+
+/*===POR QUE CONSUMIR ORGANICO===*/
+
+
+.cierre {
+    font-family: $ff-ter;
+    font-size: 1rem;
+}
+
+
+.receta {
+    font-family: $ff-ter;
+    font-size: 1rem;
+}
+
+
+/*===DISPONIBLES===*/
+
+
+.productos {
+    display: flex;
+    justify-content: center;
+
+    .tarjeta {
+        border: 1px solid black;
+        border-radius: 5px;
+        padding: 1rem;
+        width: 9rem;
+        margin: 1rem;
+
+        img {
+            width: 100%;
+            height: 15rem;
+            border-radius: 5px;
+            object-fit: cover;
+            }
+
+            .tarjeta__item {
+                text-align: center;
+                padding: 0.2rem;
+            }
+
+            .tarjeta__precio {
+                text-align: center;
+                padding: 0.2rem;
+            }
+
+            .tarjeta__btn {
+                display: block;
+                width: 100%;
+                padding: 0.7rem;
+                margin: 0.5rem;
+                background-color: $btn_color;
+                color: white;
+                border: none;
+                border-radius: 0.4px;
+                box-shadow: 0px 2px 4px grey;
+                cursor: pointer;
+                }
+
+                .tarjeta__btn:hover {
+                background-color: $hvr_color;
+                }
+    }
+
+    @media (min-width: $MQ-tablet){
+
+
+    
+        .productos {
+            display: flex;
+            }
+    
+        
+            .tarjeta {
+                flex: 1;
+            }
+    
+                img {
+                    width: 100%;
+                    height: 10rem;
+                    border-radius: 5px;
+                    object-fit: cover;
+                }
+        
+        }
+
+
+        @media (min-width: $MQ-desktop){
+    
+            .contenedor {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 10px;
+                justify-content: center;
+            }
+        
+        }
+}
+
+
+
+
+
+/*====FOOTER====*/
+
+
+footer {
+    background-color: $bkg-colorsec;
+    text-align: center;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    a:hover {
+        color: $hvr_color;
+    }
+}
+
+
+
+
+
