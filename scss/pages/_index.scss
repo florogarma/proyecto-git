@@ -1,0 +1,153 @@
+/*====MAIN====*/
+
+main {
+    section {
+        display: flex;
+        
+        .bajada {
+            font-family: $ff-ter;
+            font-size: 1rem;
+        }
+    }
+    @media (max-width: $MQ-tablet){
+        .bajada {
+            display: none;
+        
+        &__secundaria {
+            display: none;
+        }
+    }
+    }
+}
+
+
+
+/*===SECCIONES===*/
+
+
+.subtitulo {
+    text-align: center;
+    padding: 1rem;
+    font-family: "Assistant", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1px;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto; 
+
+    .link__principal {
+        background-image: url(../img/vegetables-1584999_1280.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        padding: 20px;
+    }
+
+    .link__sec1 {
+        background-image: url(../img/spinach-3708115_1280.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+
+    .link__sec2 {
+        background-image: url(../img/web-3120321_1280.png);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+    }
+    
+    .link__sec3 {
+        background-image: url(../img/engin-akyurt-Y5n8mCpvlZU-unsplash.jpg);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        background-repeat: no-repeat;
+    }
+
+    .texto {
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    @media (min-width: $MQ-tablet){
+            
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            width: 100%;
+            height: 100%;
+        
+    
+    
+    
+    .link__principal {
+        grid-column: span 3;
+        grid-row: span 2;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .link__sec1, .link__sec2, .link__sec3 {
+        width: 100%;
+        height: 20vh;
+    }
+    
+    }
+
+    @media (min-width: $MQ-desktop) {
+        
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 25vw 25vw;
+    
+        
+    
+        .link__principal {
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+        
+        .link__sec1, .link__sec2, .link__sec3 {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    }
+
+
+/*===POR QUE CONSUMIR ORGANICO===*/
+
+
+.cierre {
+    font-family: $ff-ter;
+    font-size: 1rem;
+}
+
+
+.receta {
+    font-family: $ff-ter;
+    font-size: 1rem;
+}

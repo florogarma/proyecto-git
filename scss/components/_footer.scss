@@ -1,0 +1,21 @@
+/*====FOOTER====*/
+
+
+footer {
+    background-color: $bkg-colorsec;
+    text-align: center;
+    height: 10vh;
+    margin: 0;
+    padding: 0;
+
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    a:hover {
+        color: $hvr_color;
+    }
+}
+
+

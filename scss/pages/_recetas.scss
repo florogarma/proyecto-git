@@ -1,0 +1,45 @@
+.recetasec {
+    display: grid;
+
+    .recetasec__titulo {
+        text-align: center;
+        font-family: $ff-sec;
+
+
+        .recetasec__texto {
+            text-align: center;
+            font-family: $ff-ter;
+        }
+    }
+
+    
+    .recetasec__tituloter {
+        text-align: center;
+        font-family: $ff-ter;
+        margin: 12px;
+    }
+    
+    .recetasec__img {
+        padding: 5px;
+        object-fit: cover;
+        width: 100%;
+        height: 20%;
+    }
+
+    
+    .recetasec__historia {
+        text-align: center;
+        font-family: $ff-ter;
+    }
+
+    
+    .recetasec__ingredientes {
+        text-align: center;
+        font-family: $ff-ter;
+    }
+
+    .recetasec__pasos {
+        text-align: center;
+        font-family: $ff-ter;
+    }
+}

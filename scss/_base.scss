@@ -1,0 +1,47 @@
+$bkg-color: cadetblue;
+$bkg-colorsec: #79dfc1;
+$hvr_color: #45a049;
+$btn_color: #4CAF50;
+$ff-principal: "Roboto", sans-serif, arial;
+$ff-sec: "Assistant", sans-serif, arial;
+$ff-ter: "slabo", Arial, Helvetica, sans-serif;
+$MQ-tablet: 768px;
+$MQ-desktop: 1200px;
+
+
+
+* {
+    margin: 0;
+    padding: o;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+body {
+    background-color: $bkg-color;
+}
+
+main section p {
+    padding: 1rem;
+}
+
+
+main section h2 {
+    padding: 1rem;
+    text-align: right;
+}

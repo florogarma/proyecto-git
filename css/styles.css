@@ -9,6 +9,10 @@ ul {
   padding: 1rem;
 }
 
+li {
+  list-style: none;
+}
+
 img {
   max-width: 100%;
 }
@@ -36,11 +40,11 @@ header {
 header .titulo {
   text-align: center;
 }
-header .titulo .titulo__principal {
+header .titulo__principal {
   font-family: "Roboto", sans-serif, arial;
   font-size: 3rem;
 }
-header .titulo .titulo__principal .titulo__secundario {
+header .titulo__principal .titulo__secundario {
   font-family: "Assistant", sans-serif, arial;
   font-size: 1.5rem;
 }
@@ -52,23 +56,6 @@ header .titulo .titulo__principal .titulo__secundario {
     background-color: #79dfc1;
     border-top: none;
     text-align: center;
-  }
-}
-
-/*====MAIN====*/
-main section {
-  display: flex;
-}
-main section .bajada {
-  font-family: "slabo", Arial, Helvetica, sans-serif;
-  font-size: 1rem;
-}
-@media (max-width: 768px) {
-  main .bajada {
-    display: none;
-  }
-  main .bajada__secundaria {
-    display: none;
   }
 }
 
@@ -91,6 +78,39 @@ main section .bajada {
     width: 100%;
     height: 100%;
     justify-content: center;
+  }
+}
+
+/*====FOOTER====*/
+footer {
+  background-color: #79dfc1;
+  text-align: center;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+}
+footer h3 {
+  margin: 0;
+  padding: 0;
+}
+footer a:hover {
+  color: #45a049;
+}
+
+/*====MAIN====*/
+main section {
+  display: flex;
+}
+main section .bajada {
+  font-family: "slabo", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  main .bajada {
+    display: none;
+  }
+  main .bajada__secundaria {
+    display: none;
   }
 }
 
@@ -265,20 +285,39 @@ main section .bajada {
   }
 }
 
-/*====FOOTER====*/
-footer {
-  background-color: #79dfc1;
+.recetasec {
+  display: grid;
+}
+.recetasec .recetasec__titulo {
   text-align: center;
-  height: 10vh;
-  margin: 0;
-  padding: 0;
+  font-family: "Assistant", sans-serif, arial;
 }
-footer h3 {
-  margin: 0;
-  padding: 0;
+.recetasec .recetasec__titulo .recetasec__texto {
+  text-align: center;
+  font-family: "slabo", Arial, Helvetica, sans-serif;
 }
-footer a:hover {
-  color: #45a049;
+.recetasec .recetasec__tituloter {
+  text-align: center;
+  font-family: "slabo", Arial, Helvetica, sans-serif;
+  margin: 12px;
+}
+.recetasec .recetasec__img {
+  padding: 5px;
+  object-fit: cover;
+  width: 100%;
+  height: 20%;
+}
+.recetasec .recetasec__historia {
+  text-align: center;
+  font-family: "slabo", Arial, Helvetica, sans-serif;
+}
+.recetasec .recetasec__ingredientes {
+  text-align: center;
+  font-family: "slabo", Arial, Helvetica, sans-serif;
+}
+.recetasec .recetasec__pasos {
+  text-align: center;
+  font-family: "slabo", Arial, Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,38 @@
+/*====HEADER====*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: $bkg-colorsec;
+    border: 1px solid black;
+
+        .titulo {
+            text-align: center;
+    
+
+        &__principal {
+            font-family: $ff-principal;
+            font-size: 3rem;
+    
+    
+
+        .titulo__secundario {
+            font-family: $ff-sec;
+            font-size: 1.5rem;
+        }
+    }
+    
+    }
+    @media (min-width: $MQ-desktop) {
+        .tiulo__principal {
+            text-align: center;
+    
+
+        .titulo__secundario {
+            background-color: $bkg-colorsec;
+            border-top: none;
+            text-align: center;
+    }
+    }
+}
+}
