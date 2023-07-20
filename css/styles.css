@@ -320,4 +320,47 @@ main section .bajada {
   font-family: "slabo", Arial, Helvetica, sans-serif;
 }
 
+.zonas__titulo {
+  text-align: center;
+  font-family: "Assistant", sans-serif, arial;
+}
+
+.zonas {
+  display: flex;
+  flex-direction: column;
+}
+.zonas .zonas__texto {
+  text-align: center;
+  font-family: "slabo", Arial, Helvetica, sans-serif;
+}
+
+.mapas {
+  display: grid;
+}
+.mapas .mapas__norte {
+  align-items: center;
+}
+.mapas img {
+  margin: 7px;
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+  .mapas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .mapas {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
