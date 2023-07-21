@@ -1,0 +1,65 @@
+.calendario {
+    display: grid;
+
+    
+    .calendario__titulo {
+        text-align: center;
+        font-family: $ff-sec;
+
+    
+    .calendario__texto {
+        text-align: center;
+        font-family: $ff-ter;
+    }
+}
+}
+
+.cal {
+    display: grid;
+    
+    .cal__verano {
+        display: flex;
+        
+        img {
+            height: 100%;
+            width: 100%;
+            
+        }    
+    }
+
+    
+    .cal__otono {
+        display: flex;
+
+        img {
+            height: 100%;
+            width: 100%;
+        }   
+    }
+
+
+    .cal__invierno {
+        display: flex;
+
+        img {
+            height: 100%;
+            width: 100%;
+        } 
+    }
+    
+    
+    .cal__primavera {
+        display: flex;
+
+        img {
+            height: 100%;
+            width: 100%;
+        } 
+    }
+
+    
+    .cal__titulo {
+        text-align: center;
+    }
+    
+}

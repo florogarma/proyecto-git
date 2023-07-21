@@ -2,8 +2,7 @@
 
 
 .productos {
-    display: flex;
-    justify-content: center;
+    @include flexbox;
 
     .tarjeta {
         border: 1px solid black;
@@ -52,9 +51,8 @@
 
     
         .productos {
-            display: flex;
+            @include flexbox;
             }
-    
         
             .tarjeta {
                 flex: 1;
@@ -70,14 +68,26 @@
         }
 
 
-        @media (min-width: 1200px){
-    
-            .contenedor {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 10px;
-                justify-content: center;
-            }
-        
-        }
+       
 }
+
+@media (min-width: 1200px){
+    
+    .contenedor {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        justify-content: center;
+    
+
+    .productos {
+        @include flexbox;
+    }
+
+}
+  
+}
+
+
+
+

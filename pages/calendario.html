@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;500;800&family=Roboto:wght@100;400;900&family=Slabo+27px&display=swap" rel="stylesheet">
+    <meta name="description" content="Descubre la frescura estacional en nuestro Calendario de Verduras orgánicas. Te presentamos un viaje culinario a lo largo del año, destacando las mejores selecciones de frutas y verduras cultivadas de forma natural en cada temporada. Nuestro calendario te proporcionará valiosa información sobre cuándo disfrutar al máximo de tus favoritos, así como la oportunidad de experimentar nuevos sabores en cada estación. Desde las jugosas frutas de verano hasta las nutritivas verduras de invierno, encontrarás inspiración para crear platillos saludables y deliciosos durante todo el año. ¡Súmate a nuestra comunidad consciente y nutre tu cuerpo con lo mejor que la naturaleza tiene para ofrecer!">
     <link rel="stylesheet" href="../css/styles.css">
     <title>Artesanos Orgànicos - Calendario de Verduras</title>
 </head>
 
 
 <body>
-    <main>
         
         <nav class="navbar navbar-expand-lg bg-body-secondary">
             <div class="container-fluid">
@@ -22,17 +25,20 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./pages/disponibles.html">Disponibles</a>
+                    <a class="nav-link" href="./disponibles.html">Disponibles</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/recetas.html">Recetas</a>
+                    <a class="nav-link active" aria-current="page" href="./recetas.html">Recetas</a>
                   </li>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./pages/zonasdeentrega.html">Zonas de Entrega</a>
+                    <a class="nav-link active" aria-current="page" href="./zonasdeentrega.html">Zonas de Entrega</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./calendario.html">Calendario de Verduras</a>
                   </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -42,34 +48,58 @@
               </div>
             </div>
           </nav>
-        
-        <header>
-            <form action="">
-                <input type="search">
-                <input type="submit">
-            </form>
-        
-            <div>
-                <h1>Artesanos Orgánicos</h1>
-                <h2 class="titulo-secundario">Frutas y Verduras Orgánicas en la puerta de tu casa</h2>
-            </div>
-            
-        </header>
-    </main>
 
-    <section>
-        <h1>Calendario de Verduras</h1>
-        <div>
-            <img src="" alt="">
+      <header>
+      
+        <div class="titulo">
+          <h1 class="titulo__principal">Artesanos Orgánicos</h1>
+          <h2 class="titulo__secundario">Frutas y Verduras Orgánicas en la puerta de tu casa</h2>
+        </div>
+      </header>  
+
+
+    <main class="container-xl">
+
+      <section class="calendario">
+        <h2 class="calendario__titulo">Calendario de Verduras</h2>
+        <p class="calendario__texto">En esta sección, te invitamos a descubrir la frescura y diversidad de las verduras que nos ofrece cada temporada del año. Exploraremos una amplia gama de deliciosas opciones, desde las jugosas y coloridas selecciones del verano hasta las robustas y nutritivas verduras de invierno. Nuestro objetivo es ayudarte a conectarte con la naturaleza y aprovechar al máximo las cosechas estacionales, brindándote consejos prácticos para cultivar, seleccionar y disfrutar de las verduras más sabrosas y nutritivas en cada momento del año. ¡Prepárate para explorar el mundo de las verduras frescas y sumérgete en un viaje culinario lleno de sabor y vitalidad!"</p>
+      </section>
+
+      <section class="cal">
+        <h2 class="cal__titulo">Enero-Marzo</h2>
+        <div class="cal__verano">
+          <img src="../img/enero.jpg" alt="imagenes de las verduras para sembrar en enero">
+          <img src="../img/siembra-febrero.jpg" alt="imagenes de las verduras para sembrar en febrero">
+          <img src="../img/siembra-marzo.jpg" alt="imagenes de las verduras para sembrar en marzo">
         </div>
 
+        <h2 class="cal__titulo">Abril-Junio</h2>
+        <div class="cal__otono">
+          <img src="../img/siembra-abril.jpg" alt="imagenes de las verduras para sembrar en abril">
+          <img src="../img/siembra-mayo.jpg" alt="imagenes de las verduras para sembrar en mayo">
+          <img src="../img/siembra-junio.jpg" alt="imagenes de las verduras para sembrar en junio">
+        </div>
+        
+        <h2 class="cal__titulo">Julio-Septiembre</h2>
+        <div class="cal__invierno">
+          <img src="../img/siembra-julio.jpg" alt="imagenes de las verduras para sembrar en julio">
+          <img src="../img/siembra-agosto.jpg" alt="imagenes de las verduras para sembrar en agosto">
+          <img src="../img/siembra-septiembre.jpg" alt="imagenes de las verduras para sembrar en septiembre">
+        </div>
 
-    </section>
+        <h2 class="cal__titulo">Octubre-Diciembre</h2>
+        <div class="cal__primavera">
+          <img src="../img/siembra-octubre.jpg" alt="imagenes de las verduras para sembrar en octubre">
+          <img src="../img/siembra-noviembre.jpg" alt="imagenes de las verduras para sembrar en noviembre">
+          <img src="../img/siembra-diciembre.jpg" alt="imagenes de las verduras para sembrar en diciembre">
+        </div>
+
+      </section>
 
 
 
 
-
+    </main>
 
 
     <footer>
