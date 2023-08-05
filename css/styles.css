@@ -18,7 +18,7 @@ img {
 }
 
 body {
-  background-color: cadetblue;
+  background-color: #9aceb6;
 }
 
 main section p {
@@ -30,33 +30,35 @@ main section h2 {
   text-align: right;
 }
 
+h2 {
+  font-weight: bold;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 /*====HEADER====*/
 header {
   display: flex;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
   background-color: #79dfc1;
-  border: 1px solid black;
-}
-header .titulo {
-  text-align: center;
 }
 header .titulo__principal {
   font-family: "Roboto", sans-serif, arial;
   font-size: 3rem;
+  align-items: center;
+  text-align: center;
 }
-header .titulo__principal .titulo__secundario {
+header .titulo__secundario {
   font-family: "Assistant", sans-serif, arial;
   font-size: 1.5rem;
-}
-@media (min-width: 1200px) {
-  header .tiulo__principal {
-    text-align: center;
-  }
-  header .tiulo__principal .titulo__secundario {
-    background-color: #79dfc1;
-    border-top: none;
-    text-align: center;
-  }
+  align-items: center;
+  text-align: center;
 }
 
 /* ====CARROUSEL====*/
@@ -84,17 +86,41 @@ header .titulo__principal .titulo__secundario {
 /*====FOOTER====*/
 footer {
   background-color: #79dfc1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   height: 10vh;
   margin: 0;
   padding: 0;
 }
-footer h3 {
-  margin: 0;
-  padding: 0;
+footer .footer__seguinos {
+  justify-content: center;
+  text-align: center;
 }
-footer a:hover {
+footer .footer__seguinos a:hover {
   color: #45a049;
+}
+footer .footer__formulario {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+  }
+  footer .footer__seguinos {
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer__formulario {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /*====MAIN====*/
@@ -367,7 +393,6 @@ main section .bajada {
   align-items: center;
 }
 .mapas img {
-  margin: 7px;
   width: 100%;
   height: 75%;
   object-fit: cover;

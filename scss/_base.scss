@@ -1,4 +1,4 @@
-$bkg-color: cadetblue;
+$bkg-color: #9aceb6;
 $bkg-colorsec: #79dfc1;
 $hvr_color: #45a049;
 $btn_color: #4CAF50;
@@ -66,4 +66,13 @@ main section p {
 main section h2 {
     padding: 1rem;
     text-align: right;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+h3 {
+    margin: 0;
+    padding: 0;
 }
