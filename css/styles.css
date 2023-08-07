@@ -35,6 +35,7 @@ h2 {
 }
 
 h3 {
+  font-family: "slabo", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -91,7 +92,7 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 10vh;
+  height: 30vh;
   margin: 0;
   padding: 0;
 }
@@ -104,6 +105,8 @@ footer .footer__seguinos a:hover {
 }
 footer .footer__formulario {
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 @media (min-width: 768px) {
@@ -115,7 +118,7 @@ footer .footer__formulario {
   }
   footer .footer__seguinos {
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
   }
   footer .footer__formulario {
     justify-content: center;
